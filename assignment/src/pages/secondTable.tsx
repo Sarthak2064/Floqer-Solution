@@ -19,7 +19,7 @@ const secondTable: React.FC = () => {
 
     useEffect(() => {
         axios
-            .get<Salary[]>(`http://localhost:3000/api/salaries`)
+            .get<Salary[]>(`https://floqer-solution.onrender.com/api/salaries`)
             .then((response) => {
                 const filteredSalaries = response.data.filter(salary => salary.work_year.toString() === year);
                 const counts = filteredSalaries.reduce((acc: { [title: string]: number }, salary) => {
