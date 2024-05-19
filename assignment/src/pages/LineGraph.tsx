@@ -96,7 +96,7 @@ const LineGraph = () => {
 
 
     useEffect(() => {
-        axios.get<Salary[]>('http://localhost:3000/api/salaries')
+        axios.get<Salary[]>('https://floqer-solution.onrender.com/api/salaries')
             .then(response => {
                 const processedData = processData(response.data);
                 const seriesData = processedData.map(item => item.total_jobs);
