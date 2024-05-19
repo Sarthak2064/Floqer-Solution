@@ -1,7 +1,5 @@
 # Floqer-Solution
 
-Sure, here's a typical README file for a Vite + React.js project on GitHub:
-
 ```markdown
 # Vite React.js Project
 
@@ -62,10 +60,3 @@ This will generate an optimized production build in the `dist` directory.
 ## Contributing
 
 Contributions are welcome! Please follow the [Contribution Guidelines](CONTRIBUTING.md) when contributing to this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
-
-Make sure to replace placeholders like `your-username` with the appropriate values for your GitHub repository. Also, include any additional instructions or information specific to your project if necessary.
