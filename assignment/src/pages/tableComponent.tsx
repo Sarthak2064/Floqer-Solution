@@ -56,7 +56,7 @@ const TableComponent: React.FC = () => {
     const navigate = useNavigate();
     useEffect(() => {
         axios
-            .get<Salary[]>(`http://localhost:3000/api/salaries`)
+            .get<Salary[]>(`https://floqer-solution.onrender.com/api/salaries`)
             .then((response) => {
                 setSalaries(response.data);
             })
