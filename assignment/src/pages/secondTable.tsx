@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import {useParams} from "react-router-dom";
 import { useTable, Column } from "react-table";
 
 interface Salary {
