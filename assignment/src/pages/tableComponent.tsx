@@ -38,13 +38,13 @@ const processData = (data: Salary[]): ProcessedData[] => {
         result[item.work_year].total_salary += parseFloat(item.salary_in_usd.toString()); // Ensure salary_in_usd is parsed as a number
     });
 
-    // @ts-ignore
-    return Object.keys(result).map((year) => {
+
+     return Object.keys(result).map((year) => {
         const total_jobs = result[year].total_jobs;
         const total_salary = result[year].total_salary;
         const avg_salary = total_jobs > 0 ? total_salary / total_jobs : 0;
         return {
-            year,
+            year: Number(year),
             total_jobs,
             avg_salary,
         };
